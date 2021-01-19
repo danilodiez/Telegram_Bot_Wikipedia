@@ -10,7 +10,7 @@ global bot
 global TOKEN
 TOKEN = bot_token
 bot = telegram.Bot(token=TOKEN)
-
+wikipedia.set_lang("es")
 
 #Empezamos la app de flask
 app = Flask(__name__)
@@ -27,7 +27,7 @@ def respond():
 
    # Telegram entiende utf-8
    text = update.message.text.encode('utf-8').decode()
-   wikipedia.set_lang("es")
+   
    # El mensaje de bienvenida
    if text == "/start":
        # Mostramos el mensaje de bienvenida
