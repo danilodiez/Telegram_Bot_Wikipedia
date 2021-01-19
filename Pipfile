@@ -8,6 +8,7 @@ flask = "*"
 python-telegram-bot = "*"
 requests = "*"
 wikipedia = "*"
+gunicorn = "*"
 
 [dev-packages]
 
