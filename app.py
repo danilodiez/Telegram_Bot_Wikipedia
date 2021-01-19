@@ -39,9 +39,9 @@ def respond():
        bot.sendMessage(chat_id=chat_id, text=bot_welcome, reply_to_message_id=msg_id)
 
     
-    else if(text == "/en"):
+   elif text == "/en":
         wikipedia.set_lang("en")
-    else if(text == "/es"):
+   elif text == "/es":
         wikipedia.set_lang("es")
    else:
        try:
